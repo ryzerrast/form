@@ -11,7 +11,7 @@
 <body>
    <div class="wrapper">
       <div class="form">
-         <form action="sendmail.php" id="form" class="form__body" method="post">
+         <form action="<?php echo get_template_directory_uri(); ?>/sendmail.php" id="form" class="form__body" method="post">
             <h1 class="form__title">Отправка данных на почту</h1>
             <div class="form__item">
                <label for="formName" class="form__label">Имя*:</label>
