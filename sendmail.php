@@ -17,9 +17,12 @@
    $image = $_POST['image'];
 
    // От кого письмо
-   $to = 'ryzerrast@gmail.com'
-   // Кому отправить
-   $from = trim($_POST['email']);
+//    $to = 'ryzerrast@gmail.com'
+//    // Кому отправить
+//    $from = trim($_POST['email']);
+
+   $mail->setFrom('ryzerrast@gmail.com', "Text");
+   $mail->addAddress('ryzerrast@gmail.com');
 
    // if(!$mail->send()) {
    //    $message = 'Error';
